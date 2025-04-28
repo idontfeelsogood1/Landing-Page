@@ -185,9 +185,10 @@ body {
 }
 
 .footer1 {
+    margin-top: auto;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 225px;
