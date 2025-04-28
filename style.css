@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer2 {
+    background-color: #1F2937;
+}
+
+.topBar, .topBarLinks {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.headerContent {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.topBar {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.heroText {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.headerButton, .footerButton, .footerText {
+    background-color: #3882f6;
+    color: #F9FAF8;
+}
+
+.quoteHeader {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900
+}
+
+.content2 {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic; 
+    font-weight: 300;
+    color: #1F2937;
+}
+
+.footer2 {
+    color: #F9FAF8;
+}
