@@ -2,15 +2,26 @@
 
 * {
     font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+body, html {
+    border: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .header, .footer2 {
     background-color: #1F2937;
+    display: flex;
 }
 
 .topBar, .topBarLinks {
@@ -23,11 +34,6 @@ body {
     color: #E5E7EB;
 }
 
-.topBar {
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
 .heroText {
     font-size: 48px;
     color: #F9FAF8;
@@ -37,6 +43,18 @@ body {
 .headerButton, .footerButton, .footerText {
     background-color: #3882f6;
     color: #F9FAF8;
+}
+
+.headerButton, .footerButton {
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+}
+
+.headerButton {
+    margin-top: 50px;
 }
 
 .quoteHeader {
@@ -55,4 +73,102 @@ body {
 
 .footer2 {
     color: #F9FAF8;
+}
+
+/* flexboxing */
+.header {
+    flex-direction: column;
+    padding-bottom: 120px;
+    padding-top: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topBarLogo, .topBarLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topBarLogo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+.topBarLinks {
+    gap: 25px;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    gap: 20px;
+}
+.heroText, .headerText {
+    margin-bottom: 10px;
+}
+
+.headerImage {
+    width: 600px;
+    height: 250px;
+}
+
+/* quote section */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-top: 50px;
+}
+
+.content1 {
+    display: flex;
+    gap: 80px;
+}
+
+.content2 {
+    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 500px;
+    padding-right: 500px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+}
+
+.contentImage {
+    border: 7px solid #3882f6;
+    border-radius: 10px;
+}
+
+.contentImage {
+    width: 250px;
+    height: 250px;
+}
+
+.quote {
+    margin-top: 20px;
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.quoteHeader {
+    margin-bottom: 50px;
 }
